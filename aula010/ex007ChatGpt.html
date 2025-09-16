@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+        }
+
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" id="txtn1"> +
+    <input type="number" id="txtn2">
+    <input type="button" id="btnSomar" value="Somar">
+    <div id="res">Resultado</div>
+
+    <script>
+        // pega os elementos
+        const tn1 = document.getElementById('txtn1')
+        const tn2 = document.getElementById('txtn2')
+        const res = document.getElementById('res')
+        const btn = document.getElementById('btnSomar')
+
+        // adiciona o evento de clique
+        btn.addEventListener('click', function() {
+            const n1 = Number(tn1.value)
+            const n2 = Number(tn2.value)
+            const s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+        })
+    </script>
+</body>
+</html>

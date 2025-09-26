@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratica02</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th{
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="cadastro">
+        <div>
+            <label for="codigo">Código:</label>
+            <input type="text" name="codigo" id="codigo" placeholder="Ex.: 123456">
+        </div>
+        <div>
+            <label for="material">Material:</label>
+            <input type="text" name="material" id="material" placeholder="Ex.: Motor Weg">
+        </div>
+        <div>
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" id="descricao" placeholder="Ex.: Motor 1cv de 2P ">
+        </div>
+        <div>
+            <input type="button" value="Salvar" id="salvar">
+        </div>
+        <div id="tabela">
+            <table>
+                <caption>Lista de materiais</caption>
+                <thead>
+                    <tr>
+                        <th scope="colgroup">Código</th>
+                        <th scope="colgroup">Material</th>
+                        <th scope="colgroup">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody id="lista">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="javas.js"></script>
+</body>
+</html>

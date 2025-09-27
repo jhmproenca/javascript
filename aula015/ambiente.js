@@ -1,6 +1,6 @@
 let num  = [5, 8, 2, 3]
-num[4] = 6
-num.push(7)
+num[4] = 6 //adiciona 6 na posição 4 
+num.push(7) //adiciona 7 em qualquer posição
 
 
 console.log(`Nosso vetor é o ${num} e seu tamanho é ${num.length} e sua ordem crescente é ${num.sort()}`)

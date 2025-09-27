@@ -33,7 +33,7 @@ btnAdd.addEventListener('click', function(){
     } else {
         alert('Valor inválido ou já adicionado!')
     }
-    
+    document.getElementById('txtnum').value = ''  
     
 })
 
